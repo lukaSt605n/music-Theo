@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Music | Theo Bikos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar"></div>
+  
+    <script>
+      const navbarCacheKey = 'navbarCache';
+      const cachedNavbar = localStorage.getItem(navbarCacheKey);
+  
+      if (cachedNavbar) {
+        document.getElementById('navbar').innerHTML = cachedNavbar;
+      } else {
+        fetch('navbar.html')
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+            localStorage.setItem(navbarCacheKey, data);
+          });
+      }
+    </script>
+  <section class="content-section active">
+    <div class="container">
+
+      <!-- 🎬 Media Music Section -->
+      <h1 class="section-heading">Media Music</h1>
+      <p class="media-description">This section showcases Theo's original compositions for film, TV, and other media.</p>
+
+      <!-- Showreel Video -->
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/CoMNd9xDlEg"
+          title="Theo Bikos Showreel"
+          style="border: none;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- ⏱ Cue List -->
+      <ol class="cue-list">
+        <li><strong>0:05</strong> – <em>A Walk In The City</em> (2022)<br>IGTV super short – Directed by Brandon Kim</li>
+        <li><strong>0:30</strong> – <em>DOWN?</em> (2022)<br>Feature Documentary – Directed by Argyris Liapis</li>
+        <li><strong>0:57</strong> – <em>Athos, the World’s Brightest Peak</em> (2021)<br>Feature Documentary – Directed by Argyris Liapis</li>
+        <li><strong>1:46</strong> – <em>Stupefaction II</em> (2018)<br>Live to picture for Hans Richter’s <em>Filmstudie</em> (1926)</li>
+        <li><strong>2:24</strong> – <em>HEX</em> (2020)<br>IGTV super short – Directed by Brandon Kim</li>
+      </ol>
+
+      <!--  Rescores Heading -->
+      <h1 class="section-heading">Rescores</h1>
+
+      <!--  Just for Fun Section -->
+      <h2 class="sub-heading">Just for fun!</h2>
+      <p class="sub-media-description">A few playful musical moments and side projects.</p>
+
+      <div class="fun-videos">
+        <!-- YouTube 1 -->
+        <div class="fun-video">
+          <iframe 
+            src="https://www.youtube.com/embed/xqilu9dIKiQ"
+            title="Just for Fun Video 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- YouTube 2 -->
+        <div class="fun-video">
+          <iframe 
+            src="https://www.youtube.com/embed/PdQQz-snQMo?start=16"
+            title="Just for Fun Video 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- YouTube 3 -->
+        <div class="fun-video">
+          <iframe 
+            src="https://www.youtube.com/embed/bzlxDLSFVs8"
+            title="Just for Fun Video 3"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <!-- Vimeo -->
+        <div class="fun-video">
+          <iframe 
+            src="https://player.vimeo.com/video/476801734"
+            title="Just for Fun Vimeo Video"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

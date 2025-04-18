@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Orchestrations & Arrangements | Theo Bikos</title>
+  <link rel="stylesheet" href="style.css?v=1.0" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <script>
+    const navbarCacheKey = 'navbarCache';
+    const cachedNavbar = localStorage.getItem(navbarCacheKey);
+
+    if (cachedNavbar) {
+      document.getElementById('navbar').innerHTML = cachedNavbar;
+    } else {
+      fetch('navbar.html')
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+          localStorage.setItem(navbarCacheKey, data);
+        });
+    }
+  </script>
+
+  <section class="content-section">
+    <div class="container">
+      <h1>Orchestrations & Arrangements</h1>
+      <p>Selected works where Theo provided orchestration and arrangement support for various productions.</p>
+    </div>
+  </section>
+
+  <section id="arrangements" class="py-12 px-6 bg-black text-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 border-b border-gold pb-2">Arrangements & Orchestrations</h2>
+      <p class="mb-4">I offer a range of options to suit your needs as a music service provider. Whether you’re looking for a fully mixed <code>.wav</code> file, or an editable Logic, Dorico, or Cubase project that matches your available VSTs, I can deliver either option to you. And if you need both, I can provide a mix of the two.</p>
+      <p class="mb-4">Regardless of your toolset, whether you’re limited to free VSTs or have access to top-notch sound libraries, I can help you achieve the orchestral or hybrid sound you’re looking for in your music.</p>
+      <p class="mb-4">If you’re planning a studio recording, whether it’s a small ensemble or a large orchestra, I can orchestrate or arrange your piece to ensure that it meets the current industry standards while also fitting within your budget. You can be confident that your recording will sound professional and polished.</p>
+      <p class="mb-8">Trust me to bring my expertise and experience to your project and elevate it to the next level.</p>
+
+      <!-- Dynamic Orchestration -->
+<div class="arrangement-card">
+    <img src="/img/Life-After-Death02.png" alt="Live-After-Death" />
+    <div class="arrangement-text">
+      <h3>Dynamic Orchestration</h3>
+      <p>Enhancing an acoustic track’s depth by carefully balancing it with multiple orchestral layers, creating a fuller and rich orchestral sound. This example includes Spitfire Albion, Labs, and Sacconi Strings.</p>
+      <div class="audio-pair">
+        <div class="audio-item">
+          <span>🎧 Before:</span>
+          <audio controls>
+            <source src="Dropdown/Orchestrations/Dynamic Orchestration (before).wav" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="audio-item">
+          <span>🎧 After:</span>
+          <audio controls>
+            <source src="Dropdown/Orchestrations/Dynamic Orchestration (after).wav" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="arrangement-card">
+    <img src="/img/I-bid-you-welcome02.png" alt="I-bid-you-welcome" />
+    <div class="arrangement-text">
+      <h3>Horror Orchestration</h3>
+      <p>Do you have a creepy, atmospheric track that needs to be taken to the next level? I can take your digital score and turn it into an eerie, haunting orchestral piece using extended techniques and a small ensemble.</p>
+      <p>For the example below I had limited budget but the result sounds hauntingly beautiful. I recorded flute, clarinet, a small strings ensemble and used VST brass as well.</p>
+      <div class="audio-pair">
+        <div class="audio-item">
+          <span>🎧 Before:</span>
+          <audio controls>
+            <source src="Dropdown/Orchestrations/Horror Orchestration (before).wav" type="audio/mpeg" />
+          </audio>
+        </div>
+        <div class="audio-item">
+          <span>🎧 After:</span>
+          <audio controls>
+            <source src="Dropdown/Orchestrations/Horror Orchestration (after).wav" type="audio/mpeg" />
+          </audio>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+      <!-- Orchestral Enhancement -->
+      <div class="arrangement-card">
+        <img src="/img/Sherlock02.png" alt="Sherlock2" />
+        <div class="arrangement-text">
+          <h3>Orchestral Enhancement</h3>
+          <p>A background ensemble, usually strings or brass, that complements the original track without overwhelming it. This is perfect for composers who want to add some orchestral flair or cinematic depth to their music without losing the essence of their original composition.</p>
+          <div class="audio-pair">
+            <div class="audio-item">
+              <span>🎧 Before:</span>
+              <audio controls>
+                <source src="Dropdown/Orchestrations/Nothing happens to me (no strings).wav" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-item">
+              <span>🎧 After:</span>
+              <audio controls>
+                <source src="Dropdown/Orchestrations/Nothing happens to me (with strings).wav" type="audio/mpeg" />
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Epic Orchestrals -->
+      <div class="arrangement-card">
+        <img src="/img/star-wars02.png" alt="star-wars" />
+        <div class="arrangement-text">
+          <h3>Epic Orchestrals – Re-Orchestration</h3>
+          <p>Achieve an epic, full orchestral sound by re-orchestrating your composition to maximise its potential. Rather than relying on layering, I create a complex, thick, and dense texture to achieve a grandiose, texturally rich composition.</p>
+          <div class="audio-pair">
+            <div class="audio-item">
+              <span>🎧 Before:</span>
+              <audio controls>
+                <source src="Dropdown/Orchestrations/Epic Orchestrals - Re-orchestrations (before).wav" type="audio/mpeg" />
+              </audio>
+            </div>
+            <div class="audio-item">
+              <span>🎧 After:</span>
+              <audio controls>
+                <source src="Dropdown/Orchestrations/Epic Orchestrals - Re-orchestrations (after).wav" type="audio/mpeg" />
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
