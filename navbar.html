@@ -1,28 +1,26 @@
 <!-- navbar.html -->
 <html>
 <head>
-  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=1.0">
 </head>
 <body>
-<!-- CORRECT: navbar.html -->
-<nav class="navbar">
+  <nav class="navbar">
     <div class="container">
       <a href="#home" class="logo">Theo Bikos</a>
       <ul class="nav-links">
-        <li><a href="#home">Welcome</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="index.html#home">Welcome</a></li>
+        <li><a href="index.html#about">About</a></li>
         <li class="dropdown">
-          <a class="nav-item dropdown-toggle">Music <i class="fas fa-caret-down"></i></a>
+          <a class="dropdown-toggle" href="#">Music <i class="fas fa-caret-down"></i></a>
           <ul class="dropdown-menu">
             <li><a href="media-music.html">Media Music</a></li>
-            <li><a href="orchestrations.html">Orchestrations & Arrangements</a></li>
+            <li><a href="orchestrations.html">Orchestrations</a></li>
           </ul>
         </li>
-        <li><a href="#contact">Contact</a></li> <!-- ✅ Clean anchor link -->
+        <li><a href="index.html#contact">Contact</a></li>
       </ul>
     </div>
-  </nav>  
-  </body>
-  </html>
-  
-  
+  </nav>
+</body>
+</html>
