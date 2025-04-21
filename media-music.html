@@ -1,31 +1,28 @@
-<!-- media-music.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Media Music | Theo Bikos</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="navbar"></div>
 
-  <script>
-    const navbarCacheKey = 'navbarCache';
-    const cachedNavbar = localStorage.getItem(navbarCacheKey);
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        
+        <ul class="nav-links">
+            <li><a href="index.html#welcome" class="nav-item">Welcome</a></li>
+            <li><a href="index.html#about" class="nav-item">About</a></li>
+            <li><a href="index.html#music" class="nav-item">Music</a></li>
+            <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
 
-    if (cachedNavbar) {
-      document.getElementById('navbar').innerHTML = cachedNavbar;
-    } else {
-      fetch('navbar.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-          localStorage.setItem(navbarCacheKey, data);
-        });
-    }
-  </script>
-
+  <!-- Main Content Section -->
   <section class="content-section active">
     <div class="container">
       <h1 class="section-heading">Media Music</h1>
@@ -34,11 +31,11 @@
       <!-- Showreel Video -->
       <div class="video-wrapper">
         <iframe 
+          id="mainPlayer"
           src="https://www.youtube.com/embed/CoMNd9xDlEg"
           title="Theo Bikos Showreel"
-          style="border: none; width: 100%; height: 315px;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+          allowfullscreen 
+          allow="autoplay">
         </iframe>
       </div>
 
@@ -51,24 +48,37 @@
         <li><strong>2:24</strong> – <em>HEX</em> (2020)<br>IGTV super short – Directed by Brandon Kim</li>
       </ol>
 
+      <!-- Rescore Videos -->
       <h2 class="sub-heading">Rescores</h2>
       <p class="sub-media-description">A few playful musical moments and side projects.</p>
 
       <div class="fun-videos">
-        <div class="fun-video">
-          <iframe src="https://www.youtube.com/embed/xqilu9dIKiQ" title="Fun Video 1" allowfullscreen></iframe>
+        <div class="fun-video" data-video="https://www.youtube.com/embed/xqilu9dIKiQ">
+          <iframe src="https://www.youtube.com/embed/xqilu9dIKiQ" title="Fun Video 1" allowfullscreen allow="autoplay"></iframe>
         </div>
-        <div class="fun-video">
-          <iframe src="https://www.youtube.com/embed/PdQQz-snQMo?start=16" title="Fun Video 2" allowfullscreen></iframe>
+        <div class="fun-video" data-video="https://www.youtube.com/embed/PdQQz-snQMo?start=16">
+          <iframe src="https://www.youtube.com/embed/PdQQz-snQMo?start=16" title="Fun Video 2" allowfullscreen allow="autoplay"></iframe>
         </div>
-        <div class="fun-video">
-          <iframe src="https://www.youtube.com/embed/bzlxDLSFVs8" title="Fun Video 3" allowfullscreen></iframe>
-        </div>
-        <div class="fun-video">
-          <iframe src="https://player.vimeo.com/video/476801734" title="Fun Vimeo" allowfullscreen></iframe>
+        <div class="fun-video" data-video="https://www.youtube.com/embed/bzlxDLSFVs8">
+          <iframe src="https://www.youtube.com/embed/bzlxDLSFVs8" title="Fun Video 3" allowfullscreen allow="autoplay"></iframe>
         </div>
       </div>
+
     </div>
   </section>
+
+  <!-- Navigation Buttons to Other Pages -->
+  <div class="music-navigation-buttons">
+    <a href="media-music.html" class="nav-button">Media Music</a>
+    <a href="orchestrations.html" class="nav-button">Orchestration & Arrangements</a>
+  </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Theo Bikos. All rights reserved.</p>
+      </div>
+    </footer>
+  <script src="script.js"></script>
+
 </body>
 </html>

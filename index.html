@@ -1,193 +1,183 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Theo Bikos | Composer</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theo Bikos | Composer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="#home" class="logo">Theo Bikos</a>
-      <button class="menu-toggle">☰</button>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-item active">Welcome</a></li>
-        <li><a href="#about" class="nav-item">About</a></li>
-        <li class="dropdown">
-          <a class="nav-item dropdown-toggle" href="#" aria-haspopup="true" aria-expanded="false">
-            Music <i class="fas fa-caret-down"></i>
-          </a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="media-music.html" class="dropdown-item">Media Music</a></li>
-            <li><a href="orchestrations.html" class="dropdown-item">Orchestrations & Arrangements</a></li>
-          </ul>
-        </li>
-        <li><a href="#contact" class="nav-item">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- YouTube Audio Only -->
-  <div class="youtube-audio-player">
-    <button id="youtubePlayBtn">
-      <i class="fas fa-play"></i> Play 
-    </button>
-    <iframe id="youtube-audio" style="display:none;" 
-      src="https://www.youtube.com/watch?v=CoMNd9xDlEg"
-      allow="autoplay" frameborder="0"></iframe>
-  </div>
-
-  <!-- Welcome Section -->
-  <section id="home" class="content-section active">
-    <div class="hero">
+  <div class="site-wrapper">
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar">
       <div class="container">
-        <h1>Where Music Meets Vision</h1>
-        <p>Evocative scores shaped by storytelling, collaboration, and craft</p>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-item active">Welcome</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#music" class="nav-item">Music</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  
-<!-- About Section -->
-<section id="about" class="content-section">
-  <div class="container">
-    <div class="about-grid">
+    <!-- ==================== WELCOME SECTION ==================== -->
+    <section id="home" class="content-section active">
+      <div class="hero">
+        <img src="/img/ChatGPT Image Apr 18, 2025 at 01_14_40 PM.png" 
+             alt="Theo Bikos Logo" 
+             class="hero-floating-logo">
+      </div> 
+    </section> 
 
-      <!-- Left Column -->
-      <div class="about-image">
-        <img src="/img/upscalemedia-transformed.jpeg" alt="Theo Bikos in London studio">
-
-        <div class="bio-section small-section">
-          <h3>Credits</h3>
-          <ul class="process-list">
-            <li><strong>2023</strong> – Orchestrator: Short Film Musical</li>
-            <li><strong>2022</strong> – TV News Show "24" Main Theme</li>
-            <li><strong>2021</strong> – Composer: Feature Documentary <em>DOWN?</em></li>
-            <li><strong>2020</strong> – Orchestrator: Missa De Lumine</li>
-          </ul>
-        </div>
-
-        <div class="bio-section small-section">
-          <h3>Awards & Performances</h3>
-          <ul class="process-list">
-            <li><strong>2020</strong> – 2nd Prize: International Composers Competition</li>
-            <li><strong>2020</strong> – Semifinalist Special Diploma</li>
-            <li><strong>2018</strong> – Athens Concert Hall Performance</li>
-            <li><strong>2016</strong> – 3rd Prize: National Composition Contest</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="about-content">
-        <h2>Storytelling Through Sound</h2>
-
-        <div class="bio-section">
-          <h3>Artistic Identity</h3>
-          <p>A classically-trained composer blending concert-hall finesse with cinematic storytelling. Areas of expertise include:</p>
-          <ul class="expertise-list">
-            <li><i class="fas fa-theater-masks"></i> Hybrid orchestral/electronic scores</li>
-            <li><i class="fas fa-bolt"></i> Horror & atmospheric soundscapes</li>
-            <li><i class="fas fa-heart"></i> Romantic-era inspired themes</li>
-          </ul>
-        </div>
-
-        <div class="bio-section">
-          <h3>Technical Mastery</h3>
-          <div class="technical-grid">
-            <div class="tech-item">
-              <h4>Formal Training</h4>
-              <p>BMus / MMus in Composition<br>MMus in Film Scoring (UWL)</p>
+              <!-- ABOUT SECTION -->
+    <section id="about" class="content-section">
+        <div class="container">
+          <div class="about-grid">
+            <!-- LEFT COLUMN -->
+            <div class="about-image">
+              <img src="/img/upscalemedia-transformed.jpeg" alt="Theo Bikos in London studio" />
             </div>
-            <div class="tech-item">
-              <h4>Recognition</h4>
-              <p>Semifinalist – Petrov Competition<br>"DIMENSIONS" for orchestra</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="bio-section">
-          <h3>Collaborative Philosophy</h3>
-          <p>Scores are shaped by story-first thinking, emphasizing:</p>
-          <ul class="process-list">
-            <li>Open creative dialogue</li>
-            <li>Visual-narrative synergy</li>
-            <li>Adaptive composition techniques</li>
-          </ul>
-        </div>
-      </div>
       
-    </div>
-  </div>
-</section>
+            <!-- RIGHT COLUMN -->
+            <div class="about-content">
+              <h2 class="about-content-h2">Storytelling Through Sound</h2>
+      
+              <div class="scrollable-inner">
+                <div class="bio-section">
+                  <h3>Artistic Identity</h3>
+                  <p>
+                    I am a London-based media composer, driven by a deep passion for film music and storytelling...
+                  </p>
+                  <p>
+                    My classical training informs a style that is expressive and versatile — from sweeping romantic orchestrations to intimate electronic elements.
+                  </p>
+                  <ul class="expertise-list">
+                    <li><i class="fas fa-theater-masks"></i> Hybrid orchestral & electronic scoring</li>
+                    <li><i class="fas fa-bolt"></i> Horror, thriller & atmospheric textures</li>
+                    <li><i class="fas fa-heart"></i> Romantic and post-romantic orchestration</li>
+                  </ul>
+                </div>
+      
+                <div class="bio-section">
+                  <h3>Education & Achievements</h3>
+                  <p>
+                    I hold a BMus and MMus in Composition from Aristotle University of Thessaloniki, and an MMus in Composition for Film and Television from the University of West London.
+                  </p>
+                  <p>
+                    My work has been recognized in international composition competitions, including the XIV Open Composers’ Competition in Saint Petersburg.
+                  </p>
+                </div>
+      
+                <div class="bio-section">
+                  <h3>Creative Approach</h3>
+                  <p>
+                    I approach composition as a collaborative art form — one that is intimately tied to storytelling and visual expression.
+                  </p>
+                  <p>
+                    This process — both structured and intuitive — helps me evolve as an artist while ensuring that each score is personal, purposeful, and impactful.
+                  </p>
+                </div>
+      
+                <!-- CREDITS -->
+                <div class="bio-section">
+                  <h3>Credits</h3>
+                  <ul class="process-list">
+                    <li><strong>2023</strong> – Orchestrator: Short Film Musical (Dir. TBA), Composer: Fernando Gimeno</li>
+                    <li><strong>2023</strong> – Composer: Short Documentary <em>Life After Death</em> (Dir. Laurie Everitt)</li>
+                    <li><strong>2022</strong> – Composer: IGTV Short <em>A Walk In The City</em> (Dir. Brandon Kim)</li>
+                    <li><strong>2022</strong> – Composer: TV News Show <em>"24" with F. Farahzad</em>, Iran International</li>
+                    <li><strong>2021</strong> – Composer: Feature Documentary <em>DOWN?</em> (Dir. Argyris Liapis)</li>
+                    <li><strong>2021</strong> – Orchestrator: Hollywood Film Scores Tribute (Makris Symphony Orchestra)</li>
+                    <li><strong>2021</strong> – Foley & Orchestrator: Short Film <em>Sixteen by Nine</em> (Dir. João Pedro Pinto)</li>
+                    <li><strong>2021</strong> – Composer: Docudrama <em>Songs Without Words</em> (Dir. Ian Woodward)</li>
+                    <li><strong>2021</strong> – Orchestrator: <em>Missa De Lumine</em> (Composer: David Haladjian)</li>
+                    <li><strong>2021</strong> – Sound Designer: Audio Drama <em>Ghost Stories</em> (Dir. Jack Archie Roberts)</li>
+                    <li><strong>2020</strong> – Orchestrator: <em>Magnificant</em> (Composer: Julian Darius Revie)</li>
+                    <li><strong>2020</strong> – Composer: IGTV Commercials <em>Translation</em> & <em>Hex</em> (Dir. Brandon Kim)</li>
+                    <li><strong>2020</strong> – Audio Editor: News Music for Iran International</li>
+                    <li><strong>2020</strong> – MIDI Editor: Piano Music Sheet (Composer: YoungMin You)</li>
+                    <li><strong>2020</strong> – Composer: Feature Documentary <em>Athos, the World’s Brightest Peak</em></li>
+                    <li><strong>2019</strong> – Orchestrator: <em>To Follow the Star</em> (Composer: Julian Darius Revie)</li>
+                  </ul>
+                </div>
+      
+                <!-- AWARDS -->
+                <div class="bio-section">
+                  <h3>Awards & Performances</h3>
+                  <ul class="process-list">
+                    <li><strong>2020</strong> – Semifinalist Special Diploma for <em>DIMENSIONS</em> – XIV Open Composers’ Competition, St. Petersburg</li>
+                    <li><strong>2020</strong> – 2nd Prize for <em>DIMENSIONS</em> – International Composers Competition, Franz Schubert Konservatorium, Vienna</li>
+                    <li><strong>2018</strong> – Performance of <em>STUPEFACTION II</em> – Athens Concert Hall, performed by Hellenic Group of Contemporary Music</li>
+                    <li><strong>2018</strong> – Performance of <em>ETUDE on a Theme by I. Stravinsky</em> – SPACELAB & Fulbright, Thessaloniki (Pianist: Jana Luksts)</li>
+                    <li><strong>2017</strong> – Performance of <em>PENDULUM</em> – Thessaloniki Concert Hall, 8th Contemporary Music Lab</li>
+                    <li><strong>2016</strong> – 3rd Prize for <em>STUPEFACTION I</em> – National Composition Contest in Memory of D. Dragatakis, Greek Composers’ Union</li>
+                  </ul>
+                </div>
+              </div>
+            </div> <!-- End of about-content -->
+          </div> <!-- End of about-grid -->
+        </div> <!-- End of container -->
+      </section>
+      
+      
 
-
- <!-- Update your existing music section -->
-<section id="music" class="content-section">
-  <div class="container">
-    <h2>Portfolio Highlights</h2>
-    <!-- SoundCloud Player -->
-    <div class="music-player-container">
-      <iframe id="playlist-player" 
-        width="100%" height="400" scrolling="no" frameborder="no" allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1390008445&color=%23c5a769&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false">
-      </iframe>
-    </div>
-
-    <!-- Credits Section -->
-   
+    <!-- ==================== MUSIC SECTION ==================== -->
+    <section id="music" class="content-section">
+      <div class="container">
+        <div class="soundcloud-container">
+          <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/user-279085431/sets/theos-music">
+          </iframe>
+        </div>
+        <div class="music-navigation-buttons">
+          <a href="media-music.html" class="nav-button">Media Music</a>
+          <a href="orchestrations.html" class="nav-button">Orchestration & Arrangements</a>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-  <section id="contact" class="content-section">
-    <div class="container">
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <h2>Connect</h2>
-          <p><i class="fas fa-envelope"></i> contact@theobikos.uk</p>
-          <div class="social-links">
-            <a href="https://soundcloud.com/theobikos" target="_blank" aria-label="SoundCloud">
-              <i class="fab fa-soundcloud"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCxFEpwugafqrMunhjkaPzPA" target="_blank" aria-label="YouTube">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="https://www.instagram.com/theo_bikos/" target="_blank" aria-label="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/theobikos/" target="_blank" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="content-section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2 class="connect-h2">Connect</h2>
+            <div class="contact-intro">
+              <img src="/img/ChatGPT Image Apr 18, 2025 at 01_14_40 PM.png" alt="Contact Theo" class="contact-image">
+              <div class="intro-text">
+                <p>Whether you're orchestrating a project, crafting a standout performance, or launching a transformative collaboration — let’s connect.</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contact@theobikos.uk">contact@theobikos.uk</a></p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://soundcloud.com/theobikos" target="_blank"><i class="fab fa-soundcloud"></i></a>
+              <a href="https://www.youtube.com/channel/UCxFEpwugafqrMunhjkaPzPA" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.instagram.com/theo_bikos/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/theobikos/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="form-container">
+            <form id="contact-form" action="https://formspree.io/f/mjkyzpal" method="POST">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" placeholder="Email" required>
+              <textarea name="message" placeholder="Your message..." required rows="5"></textarea>
+              <button type="submit">Send Message</button>
+            </form>
           </div>
         </div>
-        <div class="form-container">
-          <form id="contact-form" action="https://formspree.io/f/mjkyzpal" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="message" placeholder="Your message..." required rows="5"></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Theo Bikos. All rights reserved.</p>
-    </div>
-  </footer>
-
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Theo Bikos. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
-
-

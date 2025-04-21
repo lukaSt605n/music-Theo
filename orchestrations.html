@@ -1,38 +1,35 @@
-<!-- orchestrations.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orchestrations & Arrangements | Theo Bikos</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orchestrations | Theo Bikos</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="navbar"></div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        
+        <ul class="nav-links">
+            <li><a href="index.html#welcome" class="nav-item">Welcome</a></li>
+            <li><a href="index.html#about" class="nav-item">About</a></li>
+            <li><a href="index.html#music" class="nav-item">Music</a></li>
+            <li><a href="index.html#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </div>
+  </nav>
 
-  <script>
-    const navbarCacheKey = 'navbarCache';
-    const cachedNavbar = localStorage.getItem(navbarCacheKey);
-
-    if (cachedNavbar) {
-      document.getElementById('navbar').innerHTML = cachedNavbar;
-    } else {
-      fetch('navbar.html')
-        .then(res => res.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-          localStorage.setItem(navbarCacheKey, data);
-        });
-    }
-  </script>
-
+  <!-- Main Content Section -->
   <section class="content-section active">
     <div class="container">
-      <h1>Orchestrations & Arrangements</h1>
-      <p>Selected works where Theo provided orchestration and arrangement support for various productions.</p>
+      <h1 class="container-Orchestrations-h1">Orchestrations & Arrangements</h1>
+      <p class="container-Orchestrations-p">Selected works where Theo provided orchestration and arrangement support for various productions.</p>
 
+      <!-- === CARD 1 === -->
       <div class="arrangement-card">
-        <img src="/img/Life-After-Death02.png" alt="Life After Death">
+        <img src="/img/Life-After-Death02.png" alt="Life After Death" />
         <div class="arrangement-text">
           <h3>Dynamic Orchestration</h3>
           <p>Enhancing an acoustic track’s depth with orchestral layers using Spitfire Albion, Labs, and Sacconi Strings.</p>
@@ -40,21 +37,22 @@
             <div class="audio-item">
               <span>🎧 Before:</span>
               <audio controls>
-                <source src="Dropdown/Orchestrations/Dynamic Orchestration (before).wav" type="audio/mpeg">
+                <source src="Dropdown/Orchestrations/Dynamic Orchestration (before).wav" type="audio/wav" />
               </audio>
             </div>
             <div class="audio-item">
               <span>🎧 After:</span>
               <audio controls>
-                <source src="Dropdown/Orchestrations/Dynamic Orchestration (after).wav" type="audio/mpeg">
+                <source src="Dropdown/Orchestrations/Dynamic Orchestration (after).wav" type="audio/wav" />
               </audio>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- === CARD 2 === -->
       <div class="arrangement-card">
-        <img src="/img/I-bid-you-welcome02.png" alt="I Bid You Welcome">
+        <img src="/img/I-bid-you-welcome02.png" alt="I Bid You Welcome" />
         <div class="arrangement-text">
           <h3>Horror Orchestration</h3>
           <p>Creating an eerie orchestral feel with live instruments and budget-conscious VSTs.</p>
@@ -62,21 +60,22 @@
             <div class="audio-item">
               <span>🎧 Before:</span>
               <audio controls>
-                <source src="Dropdown/Orchestrations/Horror Orchestration (before).wav" type="audio/mpeg">
+                <source src="Dropdown/Orchestrations/Horror Orchestration (before).wav" type="audio/wav" />
               </audio>
             </div>
             <div class="audio-item">
               <span>🎧 After:</span>
               <audio controls>
-                <source src="Dropdown/Orchestrations/Horror Orchestration (after).wav" type="audio/mpeg">
+                <source src="Dropdown/Orchestrations/Horror Orchestration (after).wav" type="audio/wav" />
               </audio>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- === CARD 3 === -->
       <div class="arrangement-card">
-        <img src="/img/Sherlock02.png" alt="Sherlock">
+        <img src="/img/Sherlock02.png" alt="Sherlock" />
         <div class="arrangement-text">
           <h3>Orchestral Enhancement</h3>
           <p>Adding a background ensemble to elevate the original track without overwhelming it.</p>
@@ -84,21 +83,22 @@
             <div class="audio-item">
               <span>🎧 Before:</span>
               <audio controls>
-                <source src="Dropdown/Orchestrations/Nothing happens to me (no strings).wav" type="audio/mpeg">
+                <source src="Dropdown/Orchestrations/Nothing happens to me (no strings).wav" type="audio/wav" />
               </audio>
             </div>
             <div class="audio-item">
               <span>🎧 After:</span>
               <audio controls>
-                <source src="Dropdown/Orchestrations/Nothing happens to me (with strings).wav" type="audio/mpeg">
+                <source src="Dropdown/Orchestrations/Nothing happens to me (with strings).wav" type="audio/wav" />
               </audio>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- === CARD 4 === -->
       <div class="arrangement-card">
-        <img src="/img/star-wars02.png" alt="Star Wars">
+        <img src="/img/star-wars02.png" alt="Star Wars" />
         <div class="arrangement-text">
           <h3>Epic Orchestrals – Re-Orchestration</h3>
           <p>Achieving an epic cinematic sound with a dense and layered orchestral approach.</p>
@@ -106,13 +106,13 @@
             <div class="audio-item">
               <span>🎧 Before:</span>
               <audio controls>
-                <source src="Dropdown/Orchestrations/Epic Orchestrals - Re-orchestrations (before).wav" type="audio/mpeg">
+                <source src="Dropdown/Orchestrations/Epic Orchestrals - Re-orchestrations (before).wav" type="audio/wav" />
               </audio>
             </div>
             <div class="audio-item">
               <span>🎧 After:</span>
               <audio controls>
-                <source src="Dropdown/Orchestrations/Epic Orchestrals - Re-orchestrations (after).wav" type="audio/mpeg">
+                <source src="Dropdown/Orchestrations/Epic Orchestrals - Re-orchestrations (after).wav" type="audio/wav" />
               </audio>
             </div>
           </div>
@@ -121,5 +121,20 @@
 
     </div>
   </section>
+
+  <!-- Navigation Buttons to Other Pages -->
+  <div class="music-navigation-buttons">
+    <a href="media-music.html" class="nav-button">Media Music</a>
+    <a href="orchestrations.html" class="nav-button">Orchestration & Arrangements</a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Theo Bikos. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
 </body>
 </html>
