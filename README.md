@@ -51,7 +51,7 @@ A sophisticated portfolio website showcasing original compositions, orchestratio
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/lukassivak/theo-bikos-composer.git
+   git clone https://github.com/lukaSt605n/music-Theo.git
    cd theo-bikos-composer
    ```
 
