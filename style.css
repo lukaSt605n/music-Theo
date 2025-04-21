@@ -98,7 +98,7 @@ body {
 /* ==================== HERO SECTION ==================== */
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-              url("/img/upscalemedia-transformed%20copy.jpeg") center/cover;
+              url("/img/WelcomeImg.jpeg") center/cover;
   height: 40vh;
   display: flex;
   justify-content: center;
@@ -130,7 +130,7 @@ body {
 /* ==================== ABOUT SECTION ==================== */
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr;
   align-items: start;
   gap: 2rem;
 }
