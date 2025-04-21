@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks?.classList.remove('active');
       }
   
-      // Let links work normally (we don't block anything)
+      
     });
   });
   
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const hash = window.location.hash;
     const path = window.location.pathname.split('/').pop();
   
-    // ✅ Only run section logic if we're on the homepage
+    
     const isIndex = path === '' || path === 'index.html';
   
     if (!isIndex) return;

@@ -141,10 +141,10 @@ body {
   max-width: 600px;
   border-radius: 12px;
   display: block;
-  margin: 20px auto 0; /* Added top margin to push the image down */
+  margin: 20px auto 0; 
 }
 
-/* Heading */
+
 .about-content-h2 {
   font-size: 2rem;
   color: var(--accent);
@@ -152,14 +152,14 @@ body {
   text-align: center;
 }
 
-/* Scrollable Text Area */
+
 .scrollable-inner {
   max-height: 60vh;
   overflow-y: auto;
   padding-right: 1rem;
 }
 
-/* Bio Cards */
+
 .bio-section {
   margin: 1.5rem 0;
   padding: 1.5rem;
@@ -168,7 +168,7 @@ body {
   border-radius: 12px;
 }
 
-/* Lists */
+
 .expertise-list li,
 .process-list li {
   padding: 0.5rem 0;
@@ -176,7 +176,7 @@ body {
   line-height: 1.5;
 }
 
-/* Sticky Behavior */
+
 @media (min-width: 768px) {
   .about-grid {
     grid-template-columns: 1.2fr 1.8fr;
@@ -193,10 +193,9 @@ body {
 
   .about-grid > div:first-child {
     position: sticky;
-    top: 20px; /* Adjust as needed */
+    top: 20px; 
   }
 }
-
 
 /* ==================== MUSIC SECTION ==================== */
 .soundcloud-container {
@@ -337,7 +336,7 @@ body {
   color: #f0f0f0;
 }
 
-/* Sub Heading for Rescore Section */
+
 .sub-heading {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
@@ -348,7 +347,7 @@ body {
   margin-top: 3rem;
 }
 
-/* Rescore Videos / Fun Videos */
+
 .fun-videos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -373,6 +372,7 @@ body {
   height: 100%;
   border: none;
 }
+
 /* ==================== ORCHESTRATIONS PAGE ==================== */
 .arrangement-card {
   display: flex;
@@ -391,7 +391,7 @@ body {
   transform: translateY(-4px);
 }
 
-/* Image */
+
 .arrangement-card img {
   width: 100%;
   height: 180px;
@@ -399,7 +399,7 @@ body {
   filter: brightness(0.95);
 }
 
-/* Text Content */
+
 .arrangement-text {
   padding: 1.5rem;
   color: var(--accent);
@@ -407,6 +407,7 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+
 .container-Orchestrations-h1 {
   font-size: 2.8rem;
   color: var(--accent);
@@ -414,6 +415,7 @@ body {
   margin: 3rem 0 1rem;
   position: relative;
 }
+
 .container-Orchestrations-h1::after {
   content: "";
   display: block;
@@ -450,7 +452,7 @@ body {
   text-align: center;
 }
 
-/* Audio Comparison */
+
 .audio-pair {
   display: flex;
   flex-direction: column;
