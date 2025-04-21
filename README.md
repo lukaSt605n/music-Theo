@@ -1,92 +1,94 @@
-Here’s a professional and clear `README.md` file you can use for your project based on the provided HTML and CSS code:
-
----
+Here's a clean copy-paste version of the README for your composer portfolio:
 
 ```markdown
-# Theo Bikos Music | Professional Music Teacher Website
+# Theo Bikos | Composer Portfolio
 
-This is a responsive, single-page portfolio website for **Theo Bikos**, a professional music teacher offering lessons in piano, guitar, and voice training. The site features a clean, modern layout with smooth navigation, video galleries, and an integrated contact form.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+A sophisticated portfolio website showcasing original compositions, orchestration work, and film scoring expertise. Features a dark-themed, responsive design with immersive multimedia elements.
 
+![Website Preview](/img/WelcomeImg.jpeg)
 
----
+## 🎹 Features
 
-## 🧰 Technologies Used
+- **Responsive Navigation**  
+  Smooth-scrolling fixed navbar with mobile menu
+- **Interactive Biography**  
+  Scrollable timeline with credentials, awards, and creative philosophy
+- **Multimedia Showcase**  
+  Embedded SoundCloud player, YouTube showreels, and audio comparisons
+- **Professional Contact Form**  
+  Integrated Formspree functionality with social media links
+- **Project Pages**  
+  Dedicated sections for media music and orchestration work
+- **Dark Aesthetic**  
+  Elegant gold-accented design with responsive layouts
 
-- **HTML5**
-- **CSS3**
-- **Font Awesome 6**
-- **Responsive Design**
-- **Formspree** (for contact form handling)
-- **YouTube Embed** (for student performance videos)
+## 🛠 Technologies
 
----
+- **HTML5** Semantic markup
+- **CSS3** Modern Grid/Flexbox layouts
+- **JavaScript** Interactive elements
+- **Font Awesome 6** Iconography
+- **Formspree** Contact form handling
+- **SoundCloud & YouTube** Media embeds
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 .
-├── index.html       # Main HTML file
-├── style.css        # Custom CSS styles
-├── script.js        # JavaScript for interactive navigation (optional)
-└── assets/          # (Optional) Folder for images or media
+├── index.html                 # Main landing page
+├── media-music.html           # Film/TV scoring portfolio
+├── orchestrations.html        # Orchestration examples
+├── style.css                  # Global styles
+├── script.js                  # Interactive functionality
+└── assets/
+    ├── img/                   # All website images
+    └── audio/                 # Before/after audio samples
 ```
 
----
+## 🚀 Installation
 
-## ✨ Features
-
-- **Responsive Navigation Bar**  
-  Fixed top menu with smooth scrolling to each section.
-
-- **Hero Section**  
-  Eye-catching header with headline and background image.
-
-- **About Section**  
-  Instructor's bio, timeline of experience, and teaching philosophy.
-
-- **Lesson Programs**  
-  Card layout showcasing different lessons (piano, guitar, voice), including pricing and key topics.
-
-- **Gallery Section**  
-  Embedded YouTube videos to showcase student performances.
-
-- **Contact Section**  
-  Details and social links alongside a working contact form using Formspree.
-
-- **Form Functionality**  
-  Users can book trial lessons directly from the website.
-
----
-
-## ⚙️ Setup Instructions
-
-1. **Clone the Repository**
+1. **Clone Repository**
    ```bash
-   git clone https://github.com/yourusername/theo-bikos-music-site.git
-   cd theo-bikos-music-site
+   git clone https://github.com/lukassivak/theo-bikos-composer.git
+   cd theo-bikos-composer
    ```
 
-2. **Open in Browser**
-   Just open the `index.html` file in your browser.
+2. **Customize Content**
+   - Replace placeholder images in `/assets/img/`
+   - Update SoundCloud embed in `index.html`
+   - Modify Formspree form action URL
+   - Adjust biography content and credits
 
-3. **Customize**
-   - Replace videos with your own YouTube embeds.
-   - Update contact info and Formspree form action link.
-   - Adjust lesson pricing or content as needed.
+3. **Run Locally**  
+   Open `index.html` in any modern browser
 
----
- 📩 Contact
+## ✨ Key Sections
 
-For questions or contributions, feel free to [email the instructor](mailto:contact@theobikosmusic.com) or fork the repo and submit a pull request!
+### `index.html`
+- Hero section with animated logo
+- Scrollable biography with credentials
+- SoundCloud music player
+- Contact form with social links
 
----
+### `media-music.html`
+- Video showreel with timestamped cues
+- YouTube video rescore examples
+- Project descriptions
 
- License
+### `orchestrations.html` 
+- Interactive audio comparisons
+- Before/after orchestration samples
+- Project breakdowns with technical details
 
-This project is open source and free to use under the [MIT License](LICENSE).
+## 📬 Contact
 
+For professional inquiries or collaborations:  
+📧 [contact@theobikos.uk](mailto:contact@theobikos.uk)  
+🌍 [theobikos.uk](https://www.theobikos.uk)
+
+## 📜 License
+
+Distributed under MIT License. See `LICENSE` for details.
 ```
-
----
-
